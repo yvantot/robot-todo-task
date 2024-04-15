@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
       <header className=''>
-        <nav className='flex justify-between w-1/2 mx-auto text-slate-800 font-quicksand font-bold shadow-xl p-5 m-4 rounded-full'>
+        <nav className='flex justify-between w-full gap-3 rounded md:w-1/2 mx-auto text-slate-800 font-quicksand font-bold shadow-xl p-5 m-4 md:rounded-full flex-wrap'>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/counter">Counter</NavLink>
           <NavLink to="/color-picker">Color Picker</NavLink>
@@ -19,7 +19,7 @@ function App() {
           <NavLink to="/todolist">Todolist</NavLink>
         </nav>
       </header>
-        <main>
+        <main className='mx-5 overflow-hidden'>
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="counter" element={<Counter></Counter>}></Route>

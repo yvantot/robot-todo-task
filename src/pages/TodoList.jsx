@@ -52,7 +52,7 @@ function TodoList() {
   }
   
   return (
-    <div className='p-20 mx-auto block w-fit'>
+    <div className='pb-20 mx-auto block w-fit'>
       <div className="block w-72 mx-auto bg-slate-600 bg-[linear-gradient(0deg,rgba(23,52,75,1)0%,rgba(41,72,101,1)22%,rgba(43,129,147,1)100%)] text-white font-quicksand rounded-2xl mt-5 p-5 text-center min-h-80 relative shadow-lg">
         <input
           key={emotion}
