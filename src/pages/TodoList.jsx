@@ -3,7 +3,7 @@ import { useState } from 'react';
 function TodoList() {
   const [newTask, setNewTask] = useState({ id: 0, task: 'Task', isAdded: true });
   const [tasks, setTasks] = useState([]);
-  const [dialogues, setDialogues] = useState(`Hey, glad to see you!`);
+  const [dialogues, setDialogues] = useState(`I'm your Todo-list robot`);
   const [emotion, setEmotion] = useState('^                  __                ^');
   const dialogueList = [
     "You're not a robot, take some rest.",
@@ -52,7 +52,7 @@ function TodoList() {
   }
   
   return (
-    <div className='scale-150 p-20 mx-auto block w-fit'>
+    <div className='p-20 mx-auto block w-fit'>
       <div className="block w-72 mx-auto bg-slate-600 bg-[linear-gradient(0deg,rgba(23,52,75,1)0%,rgba(41,72,101,1)22%,rgba(43,129,147,1)100%)] text-white font-quicksand rounded-2xl mt-5 p-5 text-center min-h-80 relative shadow-lg">
         <input
           key={emotion}
@@ -65,7 +65,7 @@ function TodoList() {
         <div className="mt-5 text-start mb-3 flex justify-between items-center">
           <p
             style={{ textShadow: '0px 0px 3px white' }}
-            className="fade-in select-none inline-block shadow-inner font-bold shadow-slate-800 bg-[radial-gradient(circle,rgba(108,147,179,1)0%,rgba(93,132,168,1)22%,rgba(32,114,131,1)100%)] p-1 px-2 text-xs rounded m-1 text-slate-100 border-1 border-slate-900 break-all max-w-48 font-quicksand tracking-wider" 
+            className="fade-in select-none inline-block shadow-inner font-bold shadow-slate-800 bg-[radial-gradient(circle,rgba(108,147,179,1)0%,rgba(93,132,168,1)22%,rgba(32,114,131,1)100%)] p-1 px-2 text-xs rounded m-1 text-slate-100 border-1 border-slate-900 max-w-48 font-quicksand tracking-wider" 
           >
             {dialogues}
           </p>
